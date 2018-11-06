@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Job Tracking System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+</head>
+<body>
+    <h1>Job Tracking System</h1>
+    <form id="form" method="POST" >
+        <input name="text" id='companyNameDiv' placeholder=" Company Name">
+        <input name="text" id='jobLocationDiv' placeholder=" Job Location">
+       
+        <select id="postingWebsite">
+            <option>Posting Website</option>
+            <option>Craigslist</option>
+            <option>Creativecircle</option>
+            <option>Glassdoor</option>
+            <option>Google</option>
+            <option>Indeed</option>
+            <option>Linkedin</option>
+            <option>Monster</option>
+            <option>Zip Recruiter</option>
+            <option>Other</option>
+        </select>
+       
+        <select>
+            <option>Job Title</option>
+            <option>Back-end Developer</option>
+            <option>Back-end Engineer</option>
+            <option>Front-end Developer</option>
+            <option>Front-end Engineer</option>
+            <option>Freelance</option>
+            <option>Full-stack Developer</option>
+            <option>Full-stack Engineer</option>
+            <option>UI/UX Developer</option>
+            <option>UI/UX Engineer</option>
+            <option>Web Designer</option>
+            <option>Web Developer</option>
+            </select>
+       
+            <div id='myDate'></div>
+            
+            <p id="test1"></p>
+            <p id="test2"></p>
+            <p id="test3"></p>
+            <p id="test4"></p>
+            <p id="current-date-Div"></p>
+        <button id='submit' type='button' onclick='display();' value='clickme'>Submit</button>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
