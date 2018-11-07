@@ -1,4 +1,3 @@
-
 // Runs app
 function display(){
 
@@ -7,7 +6,8 @@ function display(){
 }
 
 
-// Display current date on submition.
+
+// Display current date of submition.
 function currentDate(){
 
     const todayTime = new Date();
@@ -21,23 +21,41 @@ function currentDate(){
 
 }
 
-// Grabs user input and places it in a div. 
+//Grabs user input and places it in a div. 
+// function grabInput (){
+
+//     const companyName = document.querySelector('#companyNameInput').value 
+//     document.getElementById('companyNameDiv').innerHTML += '<p>' + companyName + '</p>';
+
+//     const jobLocation = document.querySelector('#jobLocationInput').value  
+//     document.getElementById('jobLocationDiv').innerHTML +='<p>' + jobLocation + '</p>';
+
+//     const postingWeb = document.querySelector('#jobLocationInput').value  
+//     document.getElementById('postingWebDiv').innerHTML += '<p>' + postingWeb + '</p>';
+    
+//     const jobTitle = document.querySelector('#jobTitleInput').value  
+//     document.getElementById('jobTitleDiv').innerHTML += '<p>' + jobTitle + '</p>';
+
+   
+//     // Resets form.
+//     $('#form')[0].reset();
+// }
+
 function grabInput (){
 
     const companyName = document.querySelector('#companyNameInput').value 
-    document.getElementById('companyNameDiv').innerHTML += '<p>' + companyName + '</p>';
+    document.getElementById('companyNameDiv').innerHTML += '<tr><td><p>' + companyName + '</p></td></tr>';
 
     const jobLocation = document.querySelector('#jobLocationInput').value  
-    document.getElementById('jobLocationDiv').innerHTML +='<p>' + jobLocation + '</p>';
+    document.getElementById('jobLocationDiv').innerHTML += '<tr><td><p>' + jobLocation + '</p></td></tr>';
 
     const postingWeb = document.querySelector('#jobLocationInput').value  
-    document.getElementById('postingWebDiv').innerHTML += '<p>' + postingWeb + '</p>';
+    document.getElementById('postingWebDiv').innerHTML += '<tr><td><p>' + postingWeb + '</p></td></tr>';
     
     const jobTitle = document.querySelector('#jobTitleInput').value  
-    document.getElementById('jobTitleDiv').innerHTML += '<p>' + jobTitle + '</p>';
+    document.getElementById('jobTitleDiv').innerHTML += '<tr><td><p>' + jobTitle + '</p></td></tr>';
 
    
     // Resets form.
     $('#form')[0].reset();
-
 }

@@ -21,13 +21,26 @@
         <input name="text" class='userInput' id='jobTitleInput' placeholder=" Job Title">
         <button id='submit' type='button' onclick='display();' value='clickme'>Submit</button>
     </form>
-    <div class='row'>
-        <div class="col-sm-2 col-xs-2 content space" id="companyNameDiv">Company Name</div>
-        <div class="col-sm-2 col-xs-2 content space" id="jobLocationDiv">Job Location</div>
-        <div class="col-sm-2 col-xs-2 content space" id="postingWebDiv">Posting Website</div>
-        <div class="col-sm-2 col-xs-2 content space" id="jobTitleDiv">Job Title</div>
-        <div class="col-sm-2 col-xs-2 content space" id="currentDateDiv">Date</div>
-    </div>
+
+
+    <table>
+        <tr>
+          <th>Company Name</th>
+          <th>Job Location</th>
+          <th>Posting Website</th>
+          <th>Job Title</th>
+          <th>Date</th>
+        </tr>
+        <tr>
+            <td id="companyNameDiv"></td>
+            <td id="jobLocationDiv"></td>
+            <td id="postingWebDiv"></td>
+            <td id="jobTitleDiv"></td>
+            <td id="currentDateDiv"></td>
+        </tr>
+
+       
+      </table>
 
 
     <!-- js file -->
