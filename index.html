@@ -5,54 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Job Tracking System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Css file -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--  Jquery  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-    <h1>Job Tracking System</h1>
-    <form id="form" method="POST" >
-        <input name="text" id='companyNameDiv' placeholder=" Company Name">
-        <input name="text" id='jobLocationDiv' placeholder=" Job Location">
-       
-        <select id="postingWebsite">
-            <option>Posting Website</option>
-            <option>Craigslist</option>
-            <option>Creativecircle</option>
-            <option>Glassdoor</option>
-            <option>Google</option>
-            <option>Indeed</option>
-            <option>Linkedin</option>
-            <option>Monster</option>
-            <option>Zip Recruiter</option>
-            <option>Other</option>
-        </select>
-       
-        <select>
-            <option>Job Title</option>
-            <option>Back-end Developer</option>
-            <option>Back-end Engineer</option>
-            <option>Front-end Developer</option>
-            <option>Front-end Engineer</option>
-            <option>Freelance</option>
-            <option>Full-stack Developer</option>
-            <option>Full-stack Engineer</option>
-            <option>UI/UX Developer</option>
-            <option>UI/UX Engineer</option>
-            <option>Web Designer</option>
-            <option>Web Developer</option>
-            </select>
-       
-            <div id='myDate'></div>
-            
-            <p id="test1"></p>
-            <p id="test2"></p>
-            <p id="test3"></p>
-            <p id="test4"></p>
-            <p id="current-date-Div"></p>
+    <h1 class='text-center'>Job Tracking System</h1>
+    <form id="form" class='text-center' method="POST">
+        <input name="text" class='userInput' id='companyNameInput' placeholder=" Company Name">
+        <input name="text" class='userInput' id='jobLocationInput' placeholder=" Job Location">
+        <input name="text" class='userInput' id='postingWebInput' placeholder=" Posting Website">
+        <input name="text" class='userInput' id='jobTitleInput' placeholder=" Job Title">
         <button id='submit' type='button' onclick='display();' value='clickme'>Submit</button>
     </form>
+    <div class='row'>
+        <div class="col-sm-2 col-xs-2 content space" id="companyNameDiv">Company Name</div>
+        <div class="col-sm-2 col-xs-2 content space" id="jobLocationDiv">Job Location</div>
+        <div class="col-sm-2 col-xs-2 content space" id="postingWebDiv">Posting Website</div>
+        <div class="col-sm-2 col-xs-2 content space" id="jobTitleDiv">Job Title</div>
+        <div class="col-sm-2 col-xs-2 content space" id="currentDateDiv">Date</div>
+    </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- js file -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
