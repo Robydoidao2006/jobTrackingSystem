@@ -14,35 +14,31 @@
 </head>
 <body>
     <h1 class='text-center'>Job Tracking System</h1>
-    <form id="form" class='text-center' method="POST">
-        <input name="text" class='userInput' id='companyNameInput' placeholder=" Company Name">
-        <input name="text" class='userInput' id='jobLocationInput' placeholder=" Job Location">
-        <input name="text" class='userInput' id='postingWebInput' placeholder=" Posting Website">
-        <input name="text" class='userInput' id='jobTitleInput' placeholder=" Job Title">
-        <button id='submit' type='button' onclick='display();' value='clickme'>Submit</button>
-    </form>
 
+    <div class="container">
+        <form id="form" class='text-center' method="POST">
+            <input name="text" class='userInput' id='companyNameInput' placeholder=" Company Name">
+            <input name="text" class='userInput' id='jobLocationInput' placeholder=" Job Location">
+            <input name="text" class='userInput' id='postingWebInput' placeholder=" Posting Website">
+            <input name="text" class='userInput' id='jobTitleInput' placeholder=" Job Title">
+            <button id='submit' type='button' onclick='display();' value='clickme'>Submit</button>
+        </form>
 
-    <table>
-        <tr>
-          <th>Company Name</th>
-          <th>Job Location</th>
-          <th>Posting Website</th>
-          <th>Job Title</th>
-          <th>Date</th>
-        </tr>
-        <tr>
-            <td id="companyNameDiv"></td>
-            <td id="jobLocationDiv"></td>
-            <td id="postingWebDiv"></td>
-            <td id="jobTitleDiv"></td>
-            <td id="currentDateDiv"></td>
-        </tr>
+        <table id="results">
+            <thead>
+                <tr>
+                    <th scope="col">Company Name</th>
+                    <th scope="col">Job Location</th>
+                    <th scope="col">Posting Website</th>
+                    <th scope="col">Job Title</th> 
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+        </table>
 
-       
-      </table>
-
-
+    </div>
+    
+        
     <!-- js file -->
     <script src="assets/js/main.js"></script>
 </body>

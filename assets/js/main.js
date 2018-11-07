@@ -1,61 +1,43 @@
+// Global Variables
+
+// Setting up Date
+const todayTime = new Date();
+const month = (todayTime .getMonth() + 1);
+const day = ('0' + todayTime .getDate()).slice(-2);
+const year = (todayTime .getFullYear());
+const hour = (todayTime .getHours());
+const min = ('0' + todayTime.getMinutes()).slice(-2);
+// Concatinating dates to single string.
+const currentDate = month + "/" + day + "/" + year + " " + hour +":"+ min;
+
+
 // Runs app
 function display(){
 
     grabInput();
-    currentDate();
 }
-
-
-
-// Display current date of submition.
-function currentDate(){
-
-    const todayTime = new Date();
-    const month = (todayTime .getMonth() + 1);
-    const day = ('0' + todayTime .getDate()).slice(-2);
-    const year = (todayTime .getFullYear());
-    const hour = (todayTime .getHours());
-    const min = ('0' + todayTime.getMinutes()).slice(-2);
-    
-    document.getElementById("currentDateDiv").innerHTML += '<p>' + month + "/" + day + "/" + year + " " + hour +":"+ min + '</p>';
-
-}
-
-//Grabs user input and places it in a div. 
-// function grabInput (){
-
-//     const companyName = document.querySelector('#companyNameInput').value 
-//     document.getElementById('companyNameDiv').innerHTML += '<p>' + companyName + '</p>';
-
-//     const jobLocation = document.querySelector('#jobLocationInput').value  
-//     document.getElementById('jobLocationDiv').innerHTML +='<p>' + jobLocation + '</p>';
-
-//     const postingWeb = document.querySelector('#jobLocationInput').value  
-//     document.getElementById('postingWebDiv').innerHTML += '<p>' + postingWeb + '</p>';
-    
-//     const jobTitle = document.querySelector('#jobTitleInput').value  
-//     document.getElementById('jobTitleDiv').innerHTML += '<p>' + jobTitle + '</p>';
-
-   
-//     // Resets form.
-//     $('#form')[0].reset();
-// }
 
 function grabInput (){
 
     const companyName = document.querySelector('#companyNameInput').value 
-    document.getElementById('companyNameDiv').innerHTML += '<tr><td><p>' + companyName + '</p></td></tr>';
+    const jobLocation = document.querySelector('#jobLocationInput').value 
+    const postingWeb = document.querySelector('#postingWebInput').value 
+    const jobTitle = document.querySelector('#jobTitleInput').value 
 
-    const jobLocation = document.querySelector('#jobLocationInput').value  
-    document.getElementById('jobLocationDiv').innerHTML += '<tr><td><p>' + jobLocation + '</p></td></tr>';
+    const table=document.getElementById("results");
+        const row=table.insertRow(-1);
+        const cell1=row.insertCell(0);
+        const cell2=row.insertCell(1);
+        const cell3=row.insertCell(2);
+        const cell4=row.insertCell(3);
+        const cell5=row.insertCell(4);
 
-    const postingWeb = document.querySelector('#jobLocationInput').value  
-    document.getElementById('postingWebDiv').innerHTML += '<tr><td><p>' + postingWeb + '</p></td></tr>';
-    
-    const jobTitle = document.querySelector('#jobTitleInput').value  
-    document.getElementById('jobTitleDiv').innerHTML += '<tr><td><p>' + jobTitle + '</p></td></tr>';
+        cell1.innerHTML=companyName;
+        cell2.innerHTML=jobLocation;        
+        cell3.innerHTML=postingWeb; 
+        cell4.innerHTML=jobTitle; 
+        cell5.innerHTML= currentDate;
 
-   
     // Resets form.
     $('#form')[0].reset();
 }
