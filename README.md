@@ -5,6 +5,9 @@ https://robydoidao2006.github.io/jobsearch/
 
 
 V.4.0 ~ Date: 11/09/2018.
+#### Minor visual improvements.
+- Seconds was removed from the date as its irrelevant to the project.
+
 #### Major technical inprovement.
 - User input is now being store on the localStorage.
 
