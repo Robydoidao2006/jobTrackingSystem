@@ -6,7 +6,7 @@ https://robydoidao2006.github.io/jobsearch/
 
 V.4.0 ~ Date: 11/09/2018.
 #### Major technical inprovement.
-- User input is now stored on the localStorage.
+- User input is now being store on the localStorage.
 
 V.3.0 ~ Date: 11/08/2018.
 #### Major visual improvements.
