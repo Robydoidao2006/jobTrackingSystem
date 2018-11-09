@@ -11,9 +11,6 @@ V.4.0 ~ Date: 11/09/2018.
 #### Major technical inprovement.
 - User input is now being store on the localStorage.
 
-$ hr '*'
-$
-
 V.3.0 ~ Date: 11/08/2018.
 #### Major visual improvements.
 - Fixed divs proportion
