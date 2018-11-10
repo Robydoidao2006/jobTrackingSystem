@@ -1,9 +1,8 @@
 # Job Tracking System
-Takes user input  and dinamicaly creates a table and organizes it in order for the user to keep track of his/her job search.
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+Takes user input and dynamically creates a table and organizes it in order for the user to keep track of his/her job search.
 
-
-[Test The Project](https://robydoidao2006.github.io/jobTrackingSystem/)
+# Test The Project
+[Click Me](https://robydoidao2006.github.io/jobTrackingSystem/)
 
 V.5.0 ~ Date: 11/10/2018.
 
