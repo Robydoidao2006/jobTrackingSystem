@@ -31,7 +31,7 @@ Takes user input and dynamically creates a table and organizes it in order for t
 ![alt text](assets/images/v3.jpg)
 
 #### V.1.1 ~ Date: 11/07/2018.
-- Current time added to the output.
+- Dynamically generates current time on submition.
 
 #### V.1.0 ~ Date: 11/06/2018.
 - Grabs user input, and display company name, job location, posting website and job title.
