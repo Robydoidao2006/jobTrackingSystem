@@ -22,25 +22,22 @@
             <input name="text" class='userInput' id='jobLocationInput' placeholder=" Job Location">
             <input name="text" class='userInput' id='postingWebInput' placeholder=" Posting Website">
             <input name="text" class='userInput' id='jobTitleInput' placeholder=" Job Title">
-            <button id='submit' type='button' onclick='display();' value='clickme'>Submit</button>
+            <button id='submit' type='button' onclick='grabInput();' value='clickme'>Submit</button>
 
         </form>
 
         <table id="results">
             <thead>
                 <tr>
-                    <th scope="col">Company Name</th>
-                    <th scope="col">Job Location</th>
-                    <th scope="col">Posting Website</th>
-                    <th scope="col">Job Title</th> 
-                    <th scope="col">Date</th>
+                    <th>Company Name</th>
+                    <th>Job Location</th>
+                    <th>Posting Website</th>
+                    <th>Job Title</th> 
+                    <th>Date</th>
                 </tr>
             </thead>
         </table>
     </div>
-
-    
-        
     <!-- js file -->
     <script src="assets/js/main.js"></script>
 </body>

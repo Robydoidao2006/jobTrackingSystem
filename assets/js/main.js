@@ -1,43 +1,39 @@
 // Global Variables
-var studentsArray = [];
-var myjsonObj = [{}];
-var jsObj = JSON.parse(myjsonObj);
-
-
+var postingArray = [];
 
 // Loads local data first
 function init() {
-    if (localStorage.studentsRecord) {
-        studentsArray = JSON.parse(localStorage.studentsRecord);
-        for (var i = 0; i < studentsArray.length; i++) {
-            postInput(studentsArray[i].companyName,
-            studentsArray[i].jobLocation, studentsArray[i].postingWeb, 
-            studentsArray[i].jobTitle, studentsArray[i].time);
+   
+    if (localStorage.postingRecord) {
+        postingArray = JSON.parse(localStorage.postingRecord);
+        for (var i = 0; i < postingArray.length; i++) {
+            postInput(postingArray[i].companyName,
+            postingArray[i].jobLocation, postingArray[i].postingWeb, 
+            postingArray[i].jobTitle, postingArray[i].time);
+
         }
     }
 }
 
 // Runs app
-function display(){
-    // prevent page from reloading.
-    // e.preventDefault();
-    timeNow();
-    grabInput();
-    postInput();
-        
-}
+// function display(){
+//     timeNow();
+//     grabInput();  
+//     postInput();
+// }
 
 // Setting up Date
 function timeNow(){
     const todayTime = new Date();
-    const month = (todayTime .getMonth() + 1);
-    const day = ('0' + todayTime .getDate()).slice(-2);
-    const year = (todayTime .getFullYear());
-    const hour = (todayTime .getHours());
+    const month = (todayTime.getMonth() + 1);
+    const day = ('0' + todayTime.getDate()).slice(-2);
+    const year = (todayTime.getFullYear());
+    const hour = ('0' + todayTime.getHours()).slice(-2);
     const min = ('0' + todayTime.getMinutes()).slice(-2);
     const sec = (todayTime.getSeconds());
     // Concatinating date to single string.
     const currentDate = month + "/" + day + "/" + year + " " + hour +":"+ min;
+    // const currentDate = sec;
     return currentDate;
 }
 
@@ -48,9 +44,9 @@ function grabInput (){
     const postingWeb = document.querySelector('#postingWebInput').value 
     const jobTitle = document.querySelector('#jobTitleInput').value 
     const time = timeNow();
-    var stuObj = {companyName: companyName, jobLocation: jobLocation, postingWeb: postingWeb, jobTitle: jobTitle, time: time };
-        studentsArray.push(stuObj);
-        localStorage.studentsRecord = JSON.stringify(studentsArray);
+    var postingObj = {companyName: companyName, jobLocation: jobLocation, postingWeb: postingWeb, jobTitle: jobTitle, time: time };
+        postingArray.push(postingObj);
+        localStorage.postingRecord = JSON.stringify(postingArray);
         postInput(companyName, jobLocation, postingWeb, jobTitle, time);
         document.getElementById("companyNameInput").value = "";
         document.getElementById("jobLocationInput").value = "";
@@ -63,7 +59,7 @@ function grabInput (){
 
 function postInput(companyName, jobLocation, postingWeb, jobTitle, time){
     const table = document.getElementById("results");
-    const row = table.insertRow(-1);
+    const row = table.insertRow(1);
     const companyNameCell = row.insertCell(0);
     const jobLocationCell = row.insertCell(1);
     const postingWebCell = row.insertCell(2);
