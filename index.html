@@ -18,17 +18,18 @@
 
     <div class="container">
         <form id="form" class='text-center'>
-            <input name="text" class='userInput' id='companyNameInput' placeholder=" Company Name">
-            <input name="text" class='userInput' id='jobLocationInput' placeholder=" Job Location">
-            <input name="text" class='userInput' id='postingWebInput' placeholder=" Posting Website">
-            <input name="text" class='userInput' id='jobTitleInput' placeholder=" Job Title">
-            <button id='submit' type='button' onclick='grabInput();' value='clickme'>Submit</button>
-
+            <input name="text" class='userInput' id='companyNameInput' placeholder=" Company Name" required>
+            <input name="text" class='userInput' id='jobLocationInput' placeholder=" Job Location" required>
+            <input name="text" class='userInput' id='postingWebInput' placeholder=" Posting Website" required>
+            <input name="text" class='userInput' id='jobTitleInput' placeholder=" Job Title" required>
+            <button id='submit' class='numberId' type='button' onclick='grabInput();' value='clickme'>Submit</button>
         </form>
 
+        <span id="inc" value="0"></span>
         <table id="results">
             <thead>
                 <tr>
+                    <th>#</th>
                     <th>Company Name</th>
                     <th>Job Location</th>
                     <th>Posting Website</th>
