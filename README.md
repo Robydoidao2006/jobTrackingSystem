@@ -3,7 +3,7 @@ Takes user input  and dinamicaly creates a table and organizes it in order for t
 [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 
 
-https://robydoidao2006.github.io/jobTrackingSystem/
+[Test The Project](https://robydoidao2006.github.io/jobTrackingSystem/)
 
 V.5.0 ~ Date: 11/10/2018.
 
