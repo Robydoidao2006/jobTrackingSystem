@@ -27,7 +27,7 @@ Takes user input and dynamically creates a table and organizes it in order for t
 #### Minor technical improvements.
 - Code clean up.
 - Concatinating.
-- Fix bug, Where current time was not being update to current time submition.
+- Bug Fixed, Where current time was not being updated to current time submition.
 ![alt text](assets/images/v3.jpg)
 
 #### V.1.1 ~ Date: 11/07/2018.
