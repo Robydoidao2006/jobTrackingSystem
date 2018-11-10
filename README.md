@@ -1,20 +1,31 @@
-# job tracking System
-takes user input and organizes it in order for the user to keep track of his/her job search.
+# Job Tracking System
+Takes user input  and dinamicaly creates a table and organizes it in order for the user to keep track of his/her job search.
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
 
 https://robydoidao2006.github.io/jobTrackingSystem/
+
+V.5.0 ~ Date: 11/10/2018.
+
+#### Major technical improvements
+- Fix property value of null on date output - it display the time correctly but error persisted on the dev tools.
+- Newest post now displays on the top of the table
+- Previous and newer user post will be store via localstorage and display.
 
 
 V.4.0 ~ Date: 11/09/2018.
 #### Minor visual improvements.
 - Seconds was removed from the date as its irrelevant to the project.
 
-#### Major technical inprovement.
+#### Major technical improvements.
 - User input is now being store on the localStorage.
 
 V.3.0 ~ Date: 11/08/2018.
 #### Major visual improvements.
 - Fixed divs proportion
 - 100% responsive
+- Added even lines for easy readability
+
 #### Minor technical improvements.
 - Code clean up.
 - Concatinating.
