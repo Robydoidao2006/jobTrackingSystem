@@ -12,16 +12,18 @@
     <!--  Jquery  -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
-<body>
+<!-- loads local data before anything else -->
+<body onload="init()">
     <h1 class='text-center'>Job Tracking System</h1>
 
     <div class="container">
-        <form id="form" class='text-center' method="POST">
+        <form id="form" class='text-center'>
             <input name="text" class='userInput' id='companyNameInput' placeholder=" Company Name">
             <input name="text" class='userInput' id='jobLocationInput' placeholder=" Job Location">
             <input name="text" class='userInput' id='postingWebInput' placeholder=" Posting Website">
             <input name="text" class='userInput' id='jobTitleInput' placeholder=" Job Title">
             <button id='submit' type='button' onclick='display();' value='clickme'>Submit</button>
+
         </form>
 
         <table id="results">
@@ -31,12 +33,12 @@
                     <th scope="col">Job Location</th>
                     <th scope="col">Posting Website</th>
                     <th scope="col">Job Title</th> 
-                    <th scope="col" id="dateNow">Date</th>
+                    <th scope="col">Date</th>
                 </tr>
             </thead>
         </table>
-
     </div>
+
     
         
     <!-- js file -->
