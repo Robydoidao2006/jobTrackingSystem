@@ -1,7 +1,7 @@
 # job tracking System
 takes user input and organizes it in order for the user to keep track of his/her job search.
 
-https://robydoidao2006.github.io/jobsearch/
+https://robydoidao2006.github.io/jobTrackingSystem/
 
 
 V.4.0 ~ Date: 11/09/2018.
