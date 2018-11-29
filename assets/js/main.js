@@ -9,7 +9,7 @@ function init() {
         postingArray = JSON.parse(localStorage.postingRecord);
         for (var i = 0; i < postingArray.length; i++) {
             postInput(
-            postingArray[i].numberId, 
+            // postingArray[i].numberId, 
             postingArray[i].companyName,
             postingArray[i].jobLocation,
             postingArray[i].postingWeb, 
@@ -49,14 +49,14 @@ function grabInput (){
     const jobLocation = document.querySelector('#jobLocationInput').value 
     const postingWeb = document.querySelector('#postingWebInput').value 
     const jobTitle = document.querySelector('#jobTitleInput').value 
-    const numberId = numberIdNow();
+    // const numberId = numberIdNow();
     const time = timeNow();
     
 
-    var postingObj = {numberId: numberId, companyName: companyName, jobLocation: jobLocation, postingWeb: postingWeb, jobTitle: jobTitle, time: time };
+    var postingObj = {companyName: companyName, jobLocation: jobLocation, postingWeb: postingWeb, jobTitle: jobTitle, time: time };
         postingArray.push(postingObj);
         localStorage.postingRecord = JSON.stringify(postingArray);
-        postInput(numberId, companyName, jobLocation, postingWeb, jobTitle, time);
+        postInput( companyName, jobLocation, postingWeb, jobTitle, time);
         document.getElementById("companyNameInput").value = "";
         document.getElementById("jobLocationInput").value = "";
         document.getElementById("postingWebInput").value = "";
@@ -65,18 +65,18 @@ function grabInput (){
 }
 
 
-function postInput( numberId , companyName, jobLocation, postingWeb, jobTitle, time){
+function postInput( companyName, jobLocation, postingWeb, jobTitle, time){
     const table = document.getElementById("results");
     const row = table.insertRow(1);
 
-    const numberIdCell = row.insertCell(0);
-    const companyNameCell = row.insertCell(1);
-    const jobLocationCell = row.insertCell(2);
-    const postingWebCell = row.insertCell(3);
-    const jobTitleCell = row.insertCell(4);
-    const timeCell = row.insertCell(5);
+    // const numberIdCell = row.insertCell(0);
+    const companyNameCell = row.insertCell(0);
+    const jobLocationCell = row.insertCell(1);
+    const postingWebCell = row.insertCell(2);
+    const jobTitleCell = row.insertCell(3);
+    const timeCell = row.insertCell(4);
 
-    numberIdCell.innerHTML = numberId;
+    // numberIdCell.innerHTML = numberId;
     companyNameCell.innerHTML = companyName;
     jobLocationCell.innerHTML = jobLocation;        
     postingWebCell.innerHTML = postingWeb; 
