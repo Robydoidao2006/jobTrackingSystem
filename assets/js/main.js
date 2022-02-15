@@ -31,7 +31,7 @@ function timeNow(){
     const min = ('0' + todayTime.getMinutes()).slice(-2);
     const sec = (todayTime.getSeconds());
     // Concatinating date to single string.
-    const currentDate = month + "/" + day + "/" + year + " " + hour +":"+ min;
+    const currentDate = hour +":"+ min + " " + month + "/" + day + "/" + year;
     // const currentDate = sec;
     return currentDate;
 }
