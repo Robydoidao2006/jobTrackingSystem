@@ -27,11 +27,11 @@ function timeNow(){
     const month = (todayTime.getMonth() + 1);
     const day = ('0' + todayTime.getDate()).slice(-2);
     const year = (todayTime.getFullYear());
-    const hour = ('0' + todayTime.getHours()).slice(-2);
-    const min = ('0' + todayTime.getMinutes()).slice(-2);
-    const sec = (todayTime.getSeconds());
+//     const hour = ('0' + todayTime.getHours()).slice(-2);
+//     const min = ('0' + todayTime.getMinutes()).slice(-2);
+//     const sec = (todayTime.getSeconds());
     // Concatinating date to single string.
-    const currentDate = hour +":"+ min + " " + month + "/" + day + "/" + year;
+    const currentDate = month + "/" + day + "/" + year;
     // const currentDate = sec;
     return currentDate;
 }
